@@ -1,0 +1,97 @@
+.card-item{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+}
+.inner-elements{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+    left: 10px;
+    bottom: 20px;
+}
+.inner-elements .inner-span{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   font-size: 13px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.inner-elements span{
+    color: white;
+}
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.675);
+}
+.movie-title{
+    font-size: 17px;
+}
+
+.bookmark{
+    background: rgba(0, 0, 0, 0.56);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 8px 9px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.inner-elements-moviecard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 10px;
+}
+.inner-elements-moviecard .inner-span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.card-item.moviecard {
+    height: 100%;
+}
+.card-item.moviecard .img-box{
+    position: relative;
+    overflow: hidden;
+}
+.dark-overlay-moviecard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.675);
+}
+.movie-img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.card-item:hover .movie-img{
+    transform: scale(1.1);
+}

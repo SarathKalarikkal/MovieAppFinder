@@ -1,0 +1,29 @@
+.description{
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.description p{
+    font-size: 14px;
+    line-height: 28px;
+}
+.sigle-wrap{
+  padding: 20px;
+}
+/* .single-movie-img{
+    background-color: aqua;
+    height: 50%;
+} */
+.single-movie-img img{
+    width: 40%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:764px) {
+    .single-movie-img img{
+        width: 100%;
+    }
+}
